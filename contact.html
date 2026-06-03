@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background: #f4f4f4;
+        }
+
+        .box {
+            max-width: 400px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .field {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input,
+        select,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+
+        textarea {
+            resize: none;
+            height: 100px;
+        }
+
+        .btn {
+            width: 100%;
+            padding: 10px;
+            background: black;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .btn:hover {
+            background: #333;
+        }
+
+        a {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<div class="box">
+
+    <h1>Feel Free to Contact Me</h1>
+
+    <p><strong>Email:</strong> alibest1678@gmail.com</p>
+    <p><strong>Phone:</strong> 03247297625</p>
+
+    <h2>Fill The Form And We Will Reach You</h2>
+
+    <!-- FORM START -->
+    <form action="https://formsubmit.co/alibest1678@gmail.com" method="POST">
+
+        <div class="field">
+            <label>Username</label>
+            <input type="text" name="username" placeholder="Enter username" required>
+        </div>
+
+        <div class="field">
+            <label>Email</label>
+            <input type="email" name="email" placeholder="Enter email" required>
+        </div>
+
+        <div class="field">
+            <label>City</label>
+
+            <select name="city" required>
+                <option value="">Select City</option>
+                <option>Karachi</option>
+                <option>Multan</option>
+                <option>Peshawar</option>
+            </select>
+        </div>
+
+        <div class="field">
+            <label>Feedback</label>
+
+            <textarea 
+                name="feedback"
+                placeholder="Write your feedback here..."
+                required>
+            </textarea>
+        </div>
+
+        <button class="btn" type="submit">Submit</button>
+
+    </form>
+    <!-- FORM END -->
+
+</div>
+
+<br>
+
+<a href="index.html">Back to Home</a>
+
+</body>
+</html>
